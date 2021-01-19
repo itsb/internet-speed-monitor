@@ -1,6 +1,8 @@
 version: '3'
 services: 
     grafana:
+        environment:
+            - GF_AUTH_ANONYMOUS_ENABLED=true
         networks:
             - web
         labels:
